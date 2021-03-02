@@ -6,6 +6,6 @@ export default function SortParam({paramName, paramKey, handleSort, sortOrder}) 
         sortDirection = <>&uarr;</>
     }
     return (
-        <div onClick={() => handleSort(paramKey)}>{sortDirection} {paramName}</div>
+        <div className="" onClick={() => handleSort(paramKey)}>{sortDirection} {paramName}</div>
     )
 }
