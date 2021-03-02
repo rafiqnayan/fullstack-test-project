@@ -8,7 +8,7 @@ export default function Navbar({ fixed }) {
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <a
-                            className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-blue-500"
+                            className="text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-blue-500"
                             href="#pablo"
                         >
                             Health Explore
@@ -18,8 +18,8 @@ export default function Navbar({ fixed }) {
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}
                         >
-                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </button>
                     </div>
@@ -30,7 +30,7 @@ export default function Navbar({ fixed }) {
                         <ul className="flex flex-col lg:flex-row list-none">
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug hover:opacity-75"
                                     href="#pablo"
                                 >
                                     <span className="ml-2">Profile</span>
@@ -38,7 +38,7 @@ export default function Navbar({ fixed }) {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug hover:opacity-75"
                                     href="#pablo"
                                 >
                                     <span className="ml-2">Jobs</span>
@@ -46,7 +46,7 @@ export default function Navbar({ fixed }) {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug hover:opacity-75"
                                     href="#pablo"
                                 >
                                     <span className="ml-2">Professional network</span>
@@ -54,7 +54,7 @@ export default function Navbar({ fixed }) {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug hover:opacity-75"
                                     href="#pablo"
                                 >
                                     <span className="ml-2">Lounge</span>
@@ -62,7 +62,7 @@ export default function Navbar({ fixed }) {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug hover:opacity-75"
                                     href="#pablo"
                                 >
                                     <span className="ml-2">Salary</span>
@@ -80,23 +80,23 @@ export default function Navbar({ fixed }) {
                         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                             <li className="nav-item self-center">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug hover:opacity-75"
                                     href="#pablo"
                                 >
-                                    <button class="border text-blue-500 border-blue-500 px-3 py-2 rounded-lg">Create Job</button>
+                                    <button className="border text-blue-500 border-blue-500 px-3 py-2 rounded-lg">Create Job</button>
                                 </a>
                             </li>
                             <li className="nav-item self-center">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug hover:opacity-75"
                                     href="#pablo"
                                 >
-                                    <button class="bg-blue-500 text-white rounded-full w-8 h-8">JO</button>
+                                    <button className="bg-blue-500 text-white rounded-full w-8 h-8">JO</button>
                                 </a>
                             </li>
                             <li className="nav-item self-center">
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug hover:opacity-75"
                                     href="#pablo"
                                 >
                                     <span className="ml-2">Logout</span>

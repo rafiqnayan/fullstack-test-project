@@ -3,6 +3,9 @@ import jobs from '../../data/jobs'
 export default async (req, res) => {
   res.statusCode = 200
   // @todo: implement filters and search
+  const results = req.query.q?jobs.filter(
+    job => job.job_title.toLowerCase().includes(req.query.q) || job.name.toLowerCase().includes(req.query.q)
+  ):jobs
   // @todo: implement automated tests
 
   // this timeout emulates unstable network connection, do not remove this one
@@ -10,5 +13,5 @@ export default async (req, res) => {
   // correct results even if server-side can't finish replies in the right order
   await new Promise((resolve) => setTimeout(resolve, 1000 * Math.random()))
 
-  res.json({jobs: jobs})
+  res.json({jobs: results})
 }
