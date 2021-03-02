@@ -1,7 +1,7 @@
 export default function Footer({ fixed }) {
     return (
         <div className="">
-            <div className="px-4 grid grid-cols-4 gap-4 bg-white mt-4 bottom-0">
+            <div className="px-4 md:grid grid-cols-4 gap-4 bg-white mt-4 bottom-0">
                 <div className="col-span-2 p-4">
                     <h3 className="text-xl font-semibold mb-2">About us</h3>
                     <p className="text-sm">

@@ -25,10 +25,10 @@ export default function JobList({query}) {
 
     return (
         <div className="bg-white col-span-10 p-4">
-          <div className="flex justify-between">
-            <div>{parseInt(data.jobs.length).toLocaleString()} job postings</div>
+          <div className="md:flex justify-between">
+            <div>{parseInt(data.totalJobs).toLocaleString()} job postings</div>
             <div className="order-last">
-              <div className="grid grid-flow-col auto-cols-max gap-4 inline-flex">
+              <div className="md:grid md:grid-flow-col auto-cols-max gap-4 md:inline-flex">
                 <div className="text-gray-400">Sort by</div>
                 <SortParam handleSort={handleSort} paramKey="location" paramName="Location" sortOrder={sortOptions.location}></SortParam>
                 <SortParam handleSort={handleSort} paramKey="role" paramName="Role" sortOrder={sortOptions.role}></SortParam>
@@ -42,7 +42,7 @@ export default function JobList({query}) {
           <div className="mt-10">
             <ul>
             {data.jobs.map((job, index) => (
-                <JobItem key={index} companyName={job.name} jobCount={job.total_jobs_in_hospital}></JobItem>
+                <JobItem key={index} orgDetails={job}></JobItem>
             ))}
             </ul>
           </div>

@@ -23,8 +23,8 @@ export default function Index() {
         <input type="text" className="flex-grow m-2 outline-none" onChange={onChange} />
       </div>
 
-      <div className="px-4 grid grid-cols-12 gap-4">
-        <div className="col-span-2">
+      <div className="px-4 md:grid grid-cols-12 gap-4">
+        <div className="md:col-span-2">
           <JobFilters></JobFilters>
         </div>
         <JobList query={query}></JobList>
